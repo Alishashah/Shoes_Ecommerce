@@ -1,0 +1,57 @@
+.comet{
+    background-image: url("../images/img3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: auto;
+
+}
+.comet-1{
+    color: black;
+}
+.comet-2{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #EB3E32
+}
+.com{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    height: auto;
+}
+
+
+.btnc{
+    border: 0;
+    border-radius: 10px;
+   /* height: 40px;
+   width: 100px; */
+    background-color: #343538;
+    color: white;
+    padding: 6px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #EB3E32;
+}
+.sto{
+    border: 0;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 15px;
+    background-color: #35D56A;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+.btnc{
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+}

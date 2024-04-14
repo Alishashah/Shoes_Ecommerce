@@ -1,0 +1,19 @@
+.btn-stock{
+
+    background-color: rgb(25, 147, 25);
+    border-radius: 10px;
+    padding: 4px 0px;
+    color: white;
+    font-weight: 500;
+    align-items: center;
+}
+
+
+.btn-add-to{
+    border: 1px solid orangered;
+    padding: 4px 0px;
+    background-color: orangered;
+    border-radius: 10px;
+    /* font-weight: 500; */
+    color: whitesmoke;
+}

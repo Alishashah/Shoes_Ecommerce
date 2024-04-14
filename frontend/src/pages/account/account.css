@@ -1,0 +1,92 @@
+.dashboard{
+    border: 2px solid gray;
+    padding: 25px;
+}
+
+.box-div-color{
+    background-color: white;
+    border: 2px solid rgba(128, 128, 128, 0.571);
+    padding: 20px 10px;
+    display: block;
+}
+
+
+.nav-color{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-left: 20px;
+}
+.nav-color:hover{
+    color: white;
+}
+.box-div-color:hover{
+    background-color: orangered;
+    border: 2px solid orangered;
+    color: white;
+}
+.int-new{
+    height: 65px;
+}
+
+.das-font{
+    font-size: 1rem;
+}
+.das-font-2{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.das-font-3{
+    font-size: 1.2rem;
+}
+
+
+.padd-6{
+    padding: 30px 200px;
+}
+
+.order-add{
+    text-decoration: dotted;
+}
+
+.hr-add{
+    text-decoration: dotted;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+
+    .padd-6{
+        padding: 30px 80px;
+    }
+
+ }
+@media only screen and (max-width: 992px) {
+
+    .padd-6{
+        padding: 20px 30px;
+    }
+ }
+@media only screen and (max-width: 768px) {
+    .padd-6{
+        padding: 10px 50px;
+    }
+    .das-font-2{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .das-font-3{
+        font-size: 0.8rem;
+    }
+    .int-new{
+        height: 50px;
+    }
+
+ }
+@media only screen and (max-width: 450px) {
+    .padd-6{
+        padding: 10px 10px;
+    }
+
+ }

@@ -1,0 +1,82 @@
+import React, { useContext } from 'react'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useState } from 'react'
+import './css/main.css'
+import { useNavigate } from 'react-router-dom'
+import { FaEye } from "react-icons/fa";
+import { GiMultiDirections } from "react-icons/gi";
+import { MdAcUnit } from "react-icons/md";
+import { FaHeart } from "react-icons/fa6";
+import ButtonGroup from './Buttongroup';
+import { Apicontext } from '../context/Apicontext';
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
+const Bestseller = () => {
+
+  const {data}=useContext(Apicontext)
+    const navigate=useNavigate()
+
+    const handleCardClick = (item) => {
+      navigate(`/singleproduct/${item}`);
+    };
+
+
+  const shoesdata=data.map((item)=>{
+    return(
+        <div  key={item._id} className='card-1 m-3'>
+          <div className='img-wrapper-2'>
+        <img src={item.image} className="img-fluid inner-img-2 img-img"/>
+        </div>
+        <div className="card-body mar-2">
+          {/* <h5 className="card-title">category:{item.category}</h5> */}
+          <p className="card-text">price:{item.price}</p>
+        </div>
+        <a href="#" className="card-2" onClick={() => handleCardClick(item)}><FaHeart /></a>
+            <a href="#" className="card-3" onClick={() => handleCardClick(item._id)}><FaEye /></a>
+            <a href="#" className="card-4" onClick={() => handleCardClick(item)}><MdAcUnit /></a>
+            <a href="#" className="card-5" onClick={() => handleCardClick(item)}><GiMultiDirections /></a>
+      </div>
+    )
+})
+  return (
+   <div className="container mar-top-bottom">
+   <center><p className='font-dis-fea'>Best Seller</p></center>
+    <center><p className='font-dis-fea-2'>There are many variations of passages of Lorem Ipsum available</p></center>
+    <div className="row">
+    <Carousel responsive={responsive}
+    swipeable={true}
+    draggable={true}
+    arrows={false}
+    infinite={true}
+    autoPlaySpeed={1000}
+    renderButtonGroupOutside={true}
+    customButtonGroup={<ButtonGroup/>}
+    removeArrowOnDeviceType={["tablet", "mobile"]}
+    >
+  {shoesdata}
+    </Carousel>
+    </div>
+   </div>
+  )
+}
+
+export default Bestseller

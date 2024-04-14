@@ -1,0 +1,161 @@
+.sha{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding:10px 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    margin-left: 20px;
+}
+.prop{
+    border: 1px solid #B4B4B8;
+    border-radius: 8px;
+    padding: 5px;
+}
+.prodg{
+    font-size: 25px;
+    padding-left: 20px;
+    color: grey;
+}
+.prodg:hover{
+    color: #EB3E32;
+    transition: all 0.3s linear;
+}
+
+.card-img-top{
+    border: 0;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+
+}
+.cary{
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+.list{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 2px solid #EB3E32;
+    background-color: #EB3E32;
+    color: white;
+    font-weight: 500;
+}
+.list:hover{
+    background-color: white;
+    color: #EB3E32;
+    border: 1px solid #EB3E32;
+    transition: all 0.3s linear;
+}
+.cdi{
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.colt{
+    border: 2px solid grey;
+    border-radius: 15px;
+    padding: 24px
+}
+.adi{
+    color: grey;
+}
+.pri{
+    border: 0;
+}
+.pri:focus{
+    border: 0;
+}
+
+.topcat{
+    background-color: #fafafa;
+    border: 2px solid #e1e1e1;
+    border-radius: 13px;
+    margin-bottom: 30px;
+    padding: 41px 28px 36px;
+}
+.topl{
+    list-style: none;
+}
+.topc{
+    color: #B4B4B8;
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+.topc:hover{
+    color: #EB3E32;
+    transition: 0.3s linear;
+}
+.toph{
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+.topco > li {
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    margin-right: 9px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 14px;
+    z-index: 1;
+}
+.topc1{
+    background-color: rgb(57, 237, 140);
+}
+.topc2{
+    background-color: rgb(166, 237, 66);
+
+}
+.topc3{
+    background-color: rgb(218, 237, 57);
+
+}
+.topc4{
+    background-color: rgb(238, 215, 57);
+
+}
+.topc5{
+    background-color: rgb(236, 162, 58);
+
+}
+.topc6{
+    background-color: rgb(243, 103, 104);
+
+}
+.topc7{
+    background-color: rgb(225, 71, 85)
+}
+.topc8{
+    background-color: rgb(220, 131, 163);
+
+}
+.topc9{
+    background-color: rgb(130, 194, 219);
+
+}
+.topc10{
+    background-color: rgb(107, 214, 176);
+
+}
+.topc11{
+    background-color: rgb(200, 194, 137);
+
+}
+.topc12{
+    background-color: rgb(114, 4, 85)
+
+}
+.topc13{
+    background-color: rgb(253, 191, 96)
+
+}
+.topc14{
+    background-color: rgb(105, 45, 183)
+
+}

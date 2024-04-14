@@ -1,0 +1,72 @@
+.shop{
+    border: 0;
+    height: 50px;
+    width: 90px;
+}
+.acc:hover{
+    color:#EB3E32 ;
+    transition: all 0.2s linear;
+}
+.lost a{
+    color: black;
+    text-decoration: none;
+}
+.lost a:hover{
+    color:#EB3E32 ;
+    transition: all 0.2s linear;
+}
+.coup{
+
+   width: 30%;
+   height: 41px;
+   background-color: black;
+   color: white;
+   border: 0;
+}
+.coup:hover{
+    background-color: #EB3E32;
+    transition: all 0.2s linear;
+}
+
+.order{
+    border: 1px solid grey;
+    padding: 50px;
+}
+.priv{
+    color: grey;
+    line-height: 1.7rem;
+}
+.priv a{
+    color: #EB3E32;
+}
+.logg button{
+    background-color: #333131;
+    border: 0;
+    width: 80%;
+    height: 60px;
+    font-weight: 500;
+    color: white;
+
+}
+.logg button:hover{
+    background-color: #EB3E32;
+    transition: all 0.2s linear;
+}
+.wisht {
+    background-image: url("../images/img23.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.shopy a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.shopy a:active{
+    color: #EB3E32;
+}
+.ACC p{
+    font-size: 14px;
+    color: grey;
+}
