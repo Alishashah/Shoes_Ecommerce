@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useEffect, useState } from 'react'
-import axios from 'axios'
 import "../shome/css/main.css"
 import { useNavigate } from 'react-router-dom'
 import { FaEye } from "react-icons/fa";
@@ -50,7 +49,7 @@ const Related = () => {
         <img src={item.image} class="img-fluid inner-img-2 img-img"/>
         </div>
         <div className="card-body mar-2">
-          <h5 className="card-title">category:{item.category}</h5>
+          {/* <h5 className="card-title">category:{item.category.categoryname}</h5> */}
           <p className="card-text">price:{item.price}</p>
         </div>
         <a href="#" className="card-2" onClick={() => handleCardClick(item)}><FaHeart /></a>

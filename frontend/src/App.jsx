@@ -42,11 +42,11 @@ import User from "./pages/adminpanel/User.jsx";
 import Category from "./pages/adminpanel/Category.jsx";
 import Productdata from "./pages/adminpanel/Productdata.jsx";
 import BlogAdmin from "./pages/adminpanel/BlogAdmin.jsx";
-import { ApiSingleproduct } from "./pages/context/Apisingleproduct.jsx";
 import Adminlogin from "./pages/adminpanel/adminlogin.jsx";
 import { AdminDataContext } from "./pages/context/Admincontext.jsx";
 import SearchProduct from "./components/SearchProduct.jsx";
 import { SearchProvider } from "./pages/context/SearchContext.jsx";
+import { CategoryData } from "./pages/context/CategoryContext.jsx";
 
 function App() {
   const path = window.location.pathname.includes("admin");
@@ -55,13 +55,16 @@ function App() {
   return (
     <>
       {!path ? (
+
           <Apidatacontext>
+
+              <CategoryData>
  <SearchProvider>
           <ApiDataContext>
             <Cartcontextprovider>
 
                 <Router>
-                  <ApiSingleproduct>
+
                     <Topnav />
                     <Toaster />
                     <Navs />
@@ -127,12 +130,14 @@ function App() {
                       </Route>
                     </Routes>
                     <Footernew />
-                  </ApiSingleproduct>
+
                 </Router>
 
             </Cartcontextprovider>
           </ApiDataContext>
           </SearchProvider>
+          </CategoryData>
+
           </Apidatacontext>
 
       ) : (

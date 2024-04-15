@@ -27,7 +27,6 @@ const Singlepro = () => {
   const tokenuser=auth?.jwttoken
   // console.log(tokenuser)
 const[dataget,setdata]=useState({})
-// const [categoryname, setCategoryName] = useState('');
 const[incre,setincre]=useState(0)
 const[reviewdata,setreviewdata]=useState({
   comment:"",
@@ -48,11 +47,6 @@ const[reviewdata,setreviewdata]=useState({
     };
     fetchSingleData();
   }, [id]);
-
-
-
-  // console.log(dataget,"liuytrerdfghjk")
-
 
     function CustomToggle({ children, eventKey }) {
         const decoratedOnClick = useAccordionButton(eventKey);
@@ -156,10 +150,10 @@ if (!dataget) {
                               <div className="col-lg-6 col-md-12 col-sm-12">
                                   <div className="pro-img-2">
 
-                                     {/* <h4>{categoryname}</h4> */}
-                                     <h6>{dataget.price}</h6>
-                                     <h6>{dataget.slug}</h6>
-                                     <h6>{dataget.brand}</h6>
+                                     <h6>Category : {dataget?.category?.categoryname}</h6>
+                                     <h6>Price : ${dataget.price}</h6>
+                                     {/* <h6>{dataget.slug}</h6> */}
+                                     <h6>Brand : {dataget.brand}</h6>
                                      <p className='d-flex flex-wrap gap-3'><p>
                           </p>
                           {dataget?.reviews?.length > 0 ? <span>({dataget?.reviews?.length} customer reviews) {dataget?.reviews?.length > 3 ? <p className='starability-result ' data-rating="3"></p> : <p className='starability-result ' data-rating="0"></p>}</span> : null}
@@ -167,7 +161,7 @@ if (!dataget) {
 
                              </p>
                                      <hr/>
-                                     <p> Assumenda vitae sit tenetur iure velit reiciendis voluptatem sequi rem incidunt odit sapiente pariatur corrupti aperiam quidem repellat asperiores, veniam omnis beatae!</p>
+                                     <p>{dataget.description}</p>
                                      <div className='d-flex'>
                                       <h6>Color : </h6>
                                       <ul className='ul-review'>

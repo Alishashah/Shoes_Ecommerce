@@ -63,24 +63,24 @@ const Newtabs = () => {
                   </div> */}
                 </li>
                 <li className="menu-item-has-children">
-                  <Link to="/">Shop
-                  <i className="fa fa-angle-down"></i>
+                  <Link to="/productlist">Shop
+                  {/* <i className="fa fa-angle-down"></i> */}
                   </Link>
-                  <div className="sub-menu mega-menu mega-menu-column">
-                    <div className="list-item">
-                      <h4 className="title">Men's Fashion</h4>
-                      <ul>
+                  {/* <div className="sub-menu mega-menu mega-menu-column"> */}
+                    {/* <div className="list-item"> */}
+                      {/* <h4 className="title">Men's Fashion</h4> */}
+                      {/* <ul>
                         <li><Link to="/">Men's Fashion</Link></li>
                         <li><Link to="/">Woman's Fashion</Link></li>
                         <li><Link to="/">kid's Fashion</Link></li>
-                      </ul>
+                      </ul> */}
                       {/* <h4 className="title">Beauty</h4> */}
                       {/* <ul>
                         <li><Link to="/">Moisturizer</Link></li>
                         <li><Link to="/">Face powder</Link></li>
                         <li><Link to="/">Lipstick</Link></li>
                       </ul> */}
-                    </div>
+                    {/* </div> */}
                     {/* <div className="list-item">
                       <h4 className="title">Women's Fashion</h4>
                       <ul>
@@ -117,7 +117,7 @@ const Newtabs = () => {
                         alt="Chair"
                       />
                     </div> */}
-                  /* </div>
+                  {/* /* </div> */}
                 </li>
                 <li className="menu-item-has-children">
                   <Link to="/blog">Blog <i className="fas fa-angle-down"></i></Link>

@@ -13,14 +13,14 @@ import Form from "react-bootstrap/Form";
 const Singleblog = () => {
   return (
     <>
-     <div className="container-fluid blogd text-center padd-6">
+     {/* <div className="container-fluid blogd text-center padd-6">
      <h1>BLOG DETAILS</h1>
             <Link className="ho" to="/">HOME</Link>
             <Link className="ho" to="/Blogdetails">//BLOG DETAILS</Link>
-     </div>
+     </div> */}
 
 
-      <div className="container my-5 bl padd">
+      <div className="container my-1 bl padd-3">
         <div className="row">
           <div className="col-lg-12">
             <div className="wrap">
